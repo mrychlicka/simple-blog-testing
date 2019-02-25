@@ -15,8 +15,8 @@ class BlogTest(TestCase):
 		b = Blog('Test Title', 'Test Author')
 		b2 = Blog('My day', 'Susan')
 
-		self.assertEqual(b.__repr__(), 'Test Title by Test Author (0 post)')
-		self.assertEqual(b2.__repr__(), 'My day by Susan (0 post)')
+		self.assertEqual(b.__repr__(), 'Test Title by Test Author (0 posts)')
+		self.assertEqual(b2.__repr__(), 'My day by Susan (0 posts)')
 
 	def test_repr_multiple_posts(self):
 		b = Blog('Meet and eat', 'Tom')
